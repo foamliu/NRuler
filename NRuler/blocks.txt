@@ -1,0 +1,20 @@
+# foamliu, 2008/08/29, for test purpose
+
+facts:
+B1 ^on B2
+B1 ^on B3
+B1 ^color red
+B2 ^on table
+B2 ^left-of B3
+B2 ^color blue
+B3 ^left-of B4
+B3 ^on table
+B3 ^color red
+
+rules:
+(B1 ^on B2) -> (B4 ^color red)
+
+query:
+<x> ^on <y>
+<y> ^left-of <z>
+<z> ^color red

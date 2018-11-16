@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F216EFA8-BB20-4B38-A273-B790913DC7DD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NRuler</RootNamespace>
+    <AssemblyName>NRuler</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\BinaryHeap.cs" />
+    <Compile Include="Common\CommandLineProgressBar.cs" />
+    <Compile Include="Common\Logger.cs" />
+    <Compile Include="Common\PriorityQueue.cs" />
+    <Compile Include="Conditions\AssertCondition.cs" />
+    <Compile Include="Conditions\Condition.cs" />
+    <Compile Include="Conditions\ConditionType.cs" />
+    <Compile Include="Conditions\NCCCondition.cs" />
+    <Compile Include="Conditions\NegativeCondition.cs" />
+    <Compile Include="Conditions\PositiveCondition.cs" />
+    <Compile Include="Conditions\RetractCondition.cs" />
+    <Compile Include="Conflicts\BasicResolver.cs" />
+    <Compile Include="Interfaces\ApplicationData.cs" />
+    <Compile Include="Interfaces\ConditionListEvaluator.cs" />
+    <Compile Include="Interfaces\RuleCondition.cs" />
+    <Compile Include="Interfaces\ConditionList.cs" />
+    <Compile Include="Interfaces\RuleConsequence.cs" />
+    <Compile Include="Interfaces\ConsequenceInvoker.cs" />
+    <Compile Include="Interfaces\RuleParameter.cs" />
+    <Compile Include="Interfaces\ParameterList.cs" />
+    <Compile Include="Interfaces\Rule.cs" />
+    <Compile Include="Interfaces\RuleRuntime.cs" />
+    <Compile Include="Interfaces\RuleSet.cs" />
+    <Compile Include="Interfaces\WorkingMemory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rete\Activation.cs" />
+    <Compile Include="Rete\Agenda.cs" />
+    <Compile Include="Rete\Alpha-Memory.cs" />
+    <Compile Include="Rete\Beta-Memory.cs" />
+    <Compile Include="Rete\BindingPair.cs" />
+    <Compile Include="Rete\Constant-Test-Node.cs" />
+    <Compile Include="Rete\Delegates.cs" />
+    <Compile Include="Rete\Dummy-Top-Node.cs" />
+    <Compile Include="Rete\Dummy-Top-Token.cs" />
+    <Compile Include="Rete\FieldType.cs" />
+    <Compile Include="Rete\Instance.cs" />
+    <Compile Include="Rete\Join-Node.cs" />
+    <Compile Include="Rete\NCC-Node.cs" />
+    <Compile Include="Rete\NCC-Partner-Node.cs" />
+    <Compile Include="Rete\Negative-Join-Result.cs" />
+    <Compile Include="Rete\Negative-Node.cs" />
+    <Compile Include="Rete\P-Node.cs" />
+    <Compile Include="Rete\Production.cs" />
+    <Compile Include="Rete\Rete.cs" />
+    <Compile Include="Rete\ReteNode.cs" />
+    <Compile Include="Rete\ReteNodeType.cs" />
+    <Compile Include="Rete\Test-At-Join-Node.cs" />
+    <Compile Include="Rete\Token.cs" />
+    <Compile Include="Rete\WME.cs" />
+    <Compile Include="Terms\BooleanTerm.cs" />
+    <Compile Include="Terms\DateTimeTerm.cs" />
+    <Compile Include="Terms\DoubleTerm.cs" />
+    <Compile Include="Terms\Evaluator.cs" />
+    <Compile Include="Terms\IntegerTerm.cs" />
+    <Compile Include="Terms\NullTerm.cs" />
+    <Compile Include="Terms\StringTerm.cs" />
+    <Compile Include="Terms\Term.cs" />
+    <Compile Include="Terms\TermType.cs" />
+    <Compile Include="Terms\Variable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
