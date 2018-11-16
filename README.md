@@ -5,6 +5,6 @@ The following diagram illustrates the basic Rete topography (three rules), and s
 
 ![image](https://github.com/foamliu/NRuler/raw/master/rete.jpg)
 
-The project was created on codeplex.com in 2009, and migrated in 2018/11.
+The project was created on codeplex.com in 2009, and migrated in 2018/11, please check [wikipeidia](https://en.wikipedia.org/wiki/Rete_algorithm) for more on rete algorithm.
 
 
