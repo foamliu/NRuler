@@ -1,10 +1,6 @@
 # NRuler
-NRuler is a fast production system based on RETE algorithm written in C#.
-
-The following diagram illustrates the basic Rete topography (three rules), and shows the associations between different node types and memories.
+NRuler是c#编写的快速的基于RETE算法的规则引擎。下图展现了RETE基本系统结构(三条规则)，并显示不同的节点类型和记忆之间的关联。
 
 ![image](https://github.com/foamliu/NRuler/raw/master/rete.jpg)
 
-The project was created on codeplex.com in 2009, and migrated in 2018/11, please check [wikipeidia](https://en.wikipedia.org/wiki/Rete_algorithm) for more on rete algorithm.
-
-
+此项目2009年在codeplex上创立，2018年11月迁移至此。
